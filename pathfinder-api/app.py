@@ -23,14 +23,8 @@ class Pathfinder(Resource):
         end2 = param_list['end2']
         cost = int(param_list['cost'])
         maze = param_list['maze']
-        #startpoints = [start1, start2]
-        #endpoints = [end1, end2]
-        #x=compare(maze,cost,startpoints,endpoints)
-        #y=x.index(min(x))
-        #a=which_path(y,s,e)
-        #for i in range (s):
-        #start = startpoints[a[0][0]]
-        #end = endpoints[a[0][1]]
+        
+        #To calculate costs for all combinations
         costs = np.zeros((2,2),dtype=int)
         path,costf=search(maze,cost,start1,end1)
         costs[0][0]=costf
@@ -40,7 +34,7 @@ class Pathfinder(Resource):
         costs[1][0]=costf
         path,costf=search(maze,cost,start2,end2)
         costs[1][1]=costf
-
+        #Find best combination
         if((costs[0][0]+costs[1][1])<(costs[0][1]+costs[1][0])):
             path1,costf = search(maze,cost, start1, end1)
             path2,costf = search(maze,cost, start2, end2)
@@ -48,7 +42,7 @@ class Pathfinder(Resource):
             path1,costf = search(maze,cost, start2, end1)
             path2,costf = search(maze,cost, start1, end2)
         
-        #path,visited = search(maze,cost, start1, end1)
+        
         paths={}
         paths['path1']=path1
         paths['path2']=path2

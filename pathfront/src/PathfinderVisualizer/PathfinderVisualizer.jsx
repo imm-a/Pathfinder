@@ -214,7 +214,7 @@ setTimeout(()=>{console.log(p)
   }
 }
   console.log(shortestpath)
- // this.animateShortestPath(shortestpath)
+  this.animateShortestPath(shortestpath)
 },5000)
 }
 

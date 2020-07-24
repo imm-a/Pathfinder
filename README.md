@@ -5,15 +5,23 @@ It uses the A-star algorithm to find the shortest path.
 It is made from a flask REST API backend and a React frontend.
 
 To start, clone the repository.
-
-Make sure you have Node.js installed.
-
+Install the following:
+<ul>
+  <li>Node.js</li>
+  <li>flask</li>
+  <li>flask-cors</li>
+  <li>numpy</li>
+</ul>
 Navigate to pathfinder-api, which contains the backend.
+
+Run the virtual environment.
 
 Use <i>python app.py</i> to run flask server.
 
 Navigate to pathfront, which contains the frontend.
 
-Use <i>npm start</i> to start the react server. This will automatically open up the frontend in your browser.
+Use <i>npm install</i> to install the package.
+
+Use <i>npm start</i> to start the react server. This will automatically open up the frontend in your browser. If not, use localhost:3000.
 
 Happy Pathfinding!

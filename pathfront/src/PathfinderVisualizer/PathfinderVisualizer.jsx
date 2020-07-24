@@ -207,7 +207,7 @@ setTimeout(()=>{console.log(p)
     
     for (let col = 0; col < COLUMN_NUMBER; col++) {
        let node = grid[row][col]
-      if(row==p[i][0] && col==p[i][1]){
+      if(row===p[i][0] && col===p[i][1]){
       shortestpath.push(node)
       }
     }

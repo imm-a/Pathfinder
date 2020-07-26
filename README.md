@@ -12,9 +12,14 @@ Install the following:
   <li>flask-cors</li>
   <li>numpy</li>
 </ul>
+Navigate to Pathfinder. Create virtual environment.
+Run the virtual environment.
+<ul> <li>On Ubuntu: <i>source env/bin/activate</i></li>
+  <li>On Windows: <i> activate virtutalenv </i></li>
+    </ul>
+
 Navigate to pathfinder-api, which contains the backend.
 
-Run the virtual environment.
 
 Use <i>python app.py</i> to run flask server.
 

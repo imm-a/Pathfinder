@@ -5,7 +5,7 @@ It uses the A-star algorithm to find the shortest path.
 It is made from a flask REST API backend and a React frontend.
 
 To start, clone the repository.
-Install the following:
+You will need the following dependencies:
 <ul>
   <li>Node.js</li>
   <li>flask</li>
@@ -19,7 +19,7 @@ Run the virtual environment.
     </ul>
 
 Navigate to pathfinder-api, which contains the backend.
-
+(You can try installing some dependencies using requirements.txt here)
 
 Use <i>python app.py</i> to run flask server.
 
